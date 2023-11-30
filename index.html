@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elden Ring Rune Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Elden Ring Rune Calculator</h1>
+        <label class="left-aligned" for="currentLevel">Current Level</label>
+        <input type="range" id="currentLevel" min="1" max="713" value="1" oninput="updateRunesNeeded()">
+        <span id="currentLevelValue">1</span>
+        <br>
+        <label class="left-aligned" for="desiredLevel">Desired Level</label>
+        <input type="range" id="desiredLevel" min="1" max="713" value="1" oninput="updateRunesNeeded()">
+        <span id="desiredLevelValue">1</span>
+        <div id="result">Runes needed: 0</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
